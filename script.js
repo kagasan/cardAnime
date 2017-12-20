@@ -194,6 +194,7 @@ window.onload = function(){
     function animeLoop(){
         anime.rectangle(0, 0, 520, 520, anime.rgb(255, 255, 255), -1);
         var str = "カードの8近傍に同じ数字があったら取り除きます．";
+        str += "\n候補が複数ある場合，古いカードが優先されます．";
         str += "\n山札："+deck.length;
         str += "\n　場："+field.length;
         str += "\n除去："+(52 - deck.length - field.length);
